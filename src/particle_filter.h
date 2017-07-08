@@ -11,6 +11,7 @@
 
 #include "helper_functions.h"
 
+
 struct Particle {
 
 	int id;
@@ -107,6 +108,7 @@ public:
 	std::string getAssociations(Particle best);
 	std::string getSenseX(Particle best);
 	std::string getSenseY(Particle best);
+	double MultivariateGaussianProb(double,double,double,double,double std_landmark[]);
 
 	/**
 	 * initialized Returns whether particle filter is initialized yet or not.
